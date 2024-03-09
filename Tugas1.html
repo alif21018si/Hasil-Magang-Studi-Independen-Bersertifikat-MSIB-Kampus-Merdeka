@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 Javascript</title>
+</head>
+
+<body align="center">
+    <marquee direction="left" behavior="alternate" scrollamount="30">
+        <h2 align="center">Data Pegawai</h2>
+    </marquee>
+
+    <script>
+        var Nama = "Ridwan";
+        var Jabatan = "Manager";
+        var Status = "Menikah";
+
+        const IDRupiah = new Intl.NumberFormat("id-ID",
+            {
+                style: "currency",
+                currency: "IDR",
+            });
+
+        if (Jabatan == "Manager")
+            Gaji = 15000000; //TRUE 1
+        else if (Jabatan == "Asisten Manager")
+            Gaji = 10000; //TRUE 2
+        else Gaji = 50000000;
+
+        tunjanganJabatan = 0.15 * Gaji;
+        tunjanganKeluarga = 0.2 * Gaji;
+        Bpjs = 0.1 * Gaji;
+        Status = "Menikah";
+
+        totalGaji = Gaji + tunjanganJabatan + tunjanganKeluarga + Bpjs;
+
+        var thead = `
+                <thead bgcolor="B2B2B2">
+                    <th>
+                        Nama
+                    </th>
+                    <th>
+                        Jabatan
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th>
+                        Gaji
+                    </th>
+                    <th>
+                        Bpjs
+                    </th>
+                    <th>
+                        Tunjangan Jabatan
+                    </th>
+                    <th>
+                        Tunjangan Keluarga
+                    </th>
+                </thead>
+            `;
+
+        var tbody = `
+            <tbody align=center>
+                <td>${Nama}</td>
+                <td>${Jabatan}</td>
+                <td>${Status}</td>
+                <td>${IDRupiah.format(Gaji)}</td>
+                <td>${IDRupiah.format(Bpjs)}</td>
+                <td>${IDRupiah.format(tunjanganKeluarga)}</td>
+                <td>${IDRupiah.format(tunjanganJabatan)}</td>
+            </tbody>
+            `;
+
+        var tfoot = `
+                <tfoot align="center">
+                    <th colspan=6 >Total Gaji</th>
+                    <td bgcolor="red"><font color="white">${IDRupiah.format(
+            totalGaji
+        )}</font></td>
+                </tfoot>
+            `;
+
+
+        var tabelFull = document.write(
+            `<table border=1 cellpadding=10 cellspacing=0 align="center">
+            ${thead}
+            ${tbody}
+            ${tfoot}
+            </table>`
+        )
+    </script>
+</body>
+
+</html>
