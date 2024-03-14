@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <script>
+        let variabel1;
+        //perurangan menggunakan increment
+        for(variabel1=1; variabel1 <= 10; variabel1++){
+            document.write('<br> No. ' + variabel1)
+        }
+        
+        document.write('<hr>');
+        let variabel2;
+        //perurangan menggunakan decrement
+        for(variabel2=10; variabel2 >= 0; variabel2--){
+            document.write('<br> No. '+ variabel2)
+        }
+        //contoh looping menampilkan bilangan ganjil 
+        document.write('<hr>');
+        let contohganjil;
+        for(contohganjil=1; contohganjil<=10; contohganjil+=2){
+            if(contohganjil % 2 ==1) 
+            document.write(" <br> cetak bilangan "+contohganjil);
+        }
+        
+        //looping menampilkan bilangan ganjil
+        document.write('<hr>');
+        let ganjil;
+        for(ganjil=1; ganjil<=30; ganjil++){
+            if(ganjil % 2 ==1) 
+            document.write(" <br> cetak bilangan "+ganjil);
+        }
+    
+        //looping menampilkan bilangan genap
+        document.write('<hr>');
+        let genap;
+        for(genap=1; genap<=30; genap++){
+            if(genap % 2 ==0) 
+            document.write(" <br> cetak bilangan "+genap);
+        }
+        document.write('<hr>');
+        //contoh looping while
+        let y = 0;
+        while(y < 4){
+            document.write("<br>"+y);
+            y++;
+        }
+
+         
+    </script>
+</body>
+</html>

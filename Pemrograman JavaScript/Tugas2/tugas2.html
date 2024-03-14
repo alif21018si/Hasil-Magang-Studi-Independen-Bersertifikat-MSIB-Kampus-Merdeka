@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 Javascript</title>
+</head>
+
+<body>
+    <marquee direction="left" behavior="alternate" scrollamount="15">
+        <h2 align="center">Data Calon Player Mobile Legends Cibinong Bogor Jawa Barat Indonesia</h2>
+    </marquee>
+    <script>
+        let s1 = { "nama": "Alif", nilai: 80 };
+        let s2 = { "nama": "Aldo", nilai: 90 };
+        let s3 = { "nama": "Aji", nilai: 70 };
+        let s4 = { "nama": "Annisa", nilai: 90 };
+        let s5 = { "nama": "Andi", nilai: 85 };
+        let s6 = { "nama": "Karmila", nilai: 85 };
+        let s7 = { "nama": "Ega", nilai: 65 };
+        let s8 = { "nama": "Didit", nilai: 75 };
+        let s9 = { "nama": "Josep", nilai: 55 };
+        let s10 = { "nama": "Yanto", nilai: 95 };
+        let s11 = { "nama": "Yudi", nilai: 85 };
+        let s12 = { "nama": "Faqih", nilai: 85 };
+        let s13 = { "nama": "Joshua", nilai: 75 };
+        let s14 = { "nama": "Marko", nilai: 65 };
+        let s15 = { "nama": "Asep", nilai: 80 };
+        let s16 = { "nama": "Kyoko", nilai: 90 };
+        let s17 = { "nama": "Ujang", nilai: 55 };
+        let s18 = { "nama": "Kiranti", nilai: 95 };
+        let s19 = { "nama": "Putri", nilai: 95 };
+        let s20 = { "nama": "Agus", nilai: 65 };
+        let s21 = { "nama": "Yanto", nilai: 95 };
+        let s22 = { "nama": "Yudis", nilai: 85 };
+        let s23 = { "nama": "Faqihz", nilai: 85 };
+        let s24 = { "nama": "Juanda", nilai: 75 };
+        let s25 = { "nama": "Dadang", nilai: 65 };
+        let s26 = { "nama": "Asep", nilai: 80 };
+        let s27 = { "nama": "Kyoko", nilai: 90 };
+        let s28 = { "nama": "Ujang", nilai: 55 };
+        let s29 = { "nama": "Kinasih", nilai: 95 };
+        let s30 = { "nama": "Monica", nilai: 95 };
+        let s31 = { "nama": "Aqila", nilai: 78 };
+
+
+        let player = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s23, s24, s25, s26, s27, s28, s29, s30, s31,];
+    </script>
+    <table style="text-align: center; width: 100%;" border="1">
+        <thead>
+            <tr>
+                <th bgcolor="B2B2B2">Nomer</th>
+                <th bgcolor="B2B2B2">Nama</th>
+                <th bgcolor="B2B2B2">Nilai</th>
+                <th bgcolor="B2B2B2">Keterangan</th>
+                <th bgcolor="B2B2B2">Grade</th>
+                <th bgcolor="B2B2B2">Predikat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                var no = 1;
+                for (let s of player) {
+                    let Keterangan = (s.nilai >= 75) ? "Lulus" : "Gagal";
+                    let Grade = "";
+                    let Predikat = "";
+                    if (s.nilai > 90 && s.nilai <= 100) Grade = "A";
+                    else if (s.nilai > 78 && s.nilai <= 90) Grade = "B";
+                    else if (s.nilai > 65 && s.nilai <= 78) Grade = "C";
+                    else if (s.nilai > 20 && s.nilai <= 65) Grade = "D";
+                    else if (s.nilai > 0 && s.nilai <= 20) Grade = "E";
+
+                    switch (Grade) {
+                        case "A":
+                            Predikat = "Sempurna";
+                            break;
+                        case "B":
+                            Predikat = "Baik";
+                            break;
+                        case "C":
+                            Predikat = "Cukup";
+                            break;
+                        case "D":
+                            Predikat = "Kurang";
+                            break;
+                        case "E":
+                            Predikat = "Buruk";
+                            break;
+                        default:
+                            Predikat = "";
+                            break;
+                    }
+
+                    document.write(`
+                        <tr>
+                            <td>${no}</td>
+                            <td>${s.nama}</td>
+                            <td>${s.nilai}</td>
+                            <td>${Keterangan}</td>
+                            <td>${Grade}</td>
+                            <td>${Predikat}</td>
+                        </tr>
+                    `);
+                    no++;
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+
+</html>
