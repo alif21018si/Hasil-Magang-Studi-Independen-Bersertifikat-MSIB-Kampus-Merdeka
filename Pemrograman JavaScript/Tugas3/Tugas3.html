@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 Javascript</title>
+</head>
+
+<body>
+    <marquee direction="left" behavior="alternate" scrollamount="10">
+        <h2 align="center">
+            Opened: Friday, 15 March 2024, 1:00 PM
+            Due: Saturday, 16 March 2024, 4:00 AM
+            </h2></marquee>
+    <form id="frm">
+        <table
+            style="width: 25%; padding-left: 1%; background-color:rgb(210, 210, 210); border: 1px solid; margin: auto;">
+            <tr>
+                <th style="padding-bottom: 5%;" colspan="2">Formulir</th><br><br><br><br><br><br><br>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>
+                    <input type="text" name="nama" id="nama" placeholder="Masukan Nama Anda">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pekerjaan">Pekerjaan</label></td>
+                <td>
+                    <input type="text" name="pekerjaan" id="pekerjaan" placeholder="Masukan Pekerjaan Anda">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hobby">Hobby</label></td>
+                <td>
+                    <input type="text" name="hobby" id="hobby" placeholder="Masukan Hobby Anda">
+                </td>
+            </tr>
+            <tr>
+                <th style="padding-bottom: 3%; color:black" colspan="2">
+                    <button style="background-color: rgb(185, 198, 67);" type="button" onclick="tampilkanData()">Kirim</button>
+                </th>
+            </tr>
+        </table>
+    </form>
+    <div id="hasil" style="text-align: center; margin-top: 10px; color:red;"></div>
+    <script src="Naskah/Naskah.js"></script>
+</body>
+
+</html>
