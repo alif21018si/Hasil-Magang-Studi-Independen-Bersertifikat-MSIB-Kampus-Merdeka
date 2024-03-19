@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 4 Javascript</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <marquee direction="left" behavior="alternate" scrollamount="10">
+        <h1>Formulir Cetak Data Pegawai</h1>
+    </marquee>
+    <form id="formulircetakPegawai">
+        <table border="2">
+            <tr>
+                <td><label for="">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" name="nama" id="nama" placeholder="Masukkan Nama" class="inputTeks" /></td>
+            </tr>
+            <tr>
+                <td>Jabatan</td>
+                <td>:</td>
+                <td><select name="jabatan" id="jabatan"></select></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="status" id="status" value="Lajang" />Belum Kawin
+                    <input type="radio" name="status" id="status" value="Kawin" />Sudah Kawin
+                    <input type="radio" name="status" id="status" value="Kawin / Cerai Hidup" />Cerai Hidup
+                    <input type="radio" name="status" id="status" value="Kawin / Cerai Mati" />Cerai Mati
+                </td>
+            </tr>
+            <tr>
+                <td>Gaji Pokok</td>
+                <td>:</td>
+                <td><input type="text" name="gajiPokok" placeholder="Nominal Gaji Pokok" class="input" disabled /></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="button" onclick="result()">Kirim</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <table border="1" cellpadding="10" cellspacing="0" align="center" id="hasil">
+    </table>
+    <script src="Script.js"></script>
+</body>
+
+</html>

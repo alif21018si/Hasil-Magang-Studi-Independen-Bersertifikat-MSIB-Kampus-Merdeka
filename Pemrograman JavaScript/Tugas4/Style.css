@@ -1,0 +1,26 @@
+#hasil {
+    margin-top: 3%;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(185, 198, 67);
+    
+}
+
+select {
+    width: 100%;
+}
+
+.inputTeks {
+    width: 97%;
+}
