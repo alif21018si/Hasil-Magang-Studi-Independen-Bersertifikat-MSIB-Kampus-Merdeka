@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: #958b8b;
+}
+
+.animal {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgb(255, 0, 0);
+    border: 10px solid #a69d9d;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.animal:hover {
+    background-color: #f7f7f7;
+}
+
+/* CSS untuk setiap hewan */
+#div1 {
+    background: url('https://asset-a.grid.id//crop/0x0:0x0/360x240/photo/2022/01/03/dog-g836c5b564_640-1jpg-20220103020839.jpg');
+    background-size: cover;
+}
+
+#div2 {
+    background: url('https://assets-a1.kompasiana.com/items/album/2021/05/10/babi-ketawa-01-60989efa8ede48081f183ee2.jpg');
+    background-size: cover;
+}
+
+#div3 {
+    background: url('https://www.dictio.id/uploads/db3342/original/3X/7/f/7f7ac383e87e4686ca614d297e8d7ec911452702.jpg');
+    background-size: cover;
+}
