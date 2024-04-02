@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-    <h2 style="text-align:center;">Input Data Mahasiswa</h2>
+    <h2 style="text-align:center;">Daftar Nilai Ujian Mahasiswa</h2>
         <label for="nama">Nama:</label><br>
         <input type="text" id="nama" name="nama"><br>
         <label for="nim">Nim:</label><br>
@@ -75,13 +75,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </select><br>
         <label for="nilai">Nilai:</label><br>
         <input type="number" id="nilai" name="nilai" min="0" max="100"><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Simpan">
     </form>
 
     <?php
     // objek $mahasiswa yang sudah dibuat dari form, cetak hasilnya
     if (isset($mahasiswa)) {
-        echo "<h2 style='text-align:center;'>Hasil</h2>";
+        echo "<h2 style='text-align:center;'>Hasil Cetak</h2>";
         echo "<table>";
         echo "<tr><th>NIM</th><th>Nama</th><th>Universitas</th><th>Mata Kuliah</th><th>Nilai</th><th>Grade</th><th>Predikat</th><th>Status</th></tr>";
         echo "<tr>";
